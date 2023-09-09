@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Task</title>
+</head>
+<body>
+   
+    <form id="checkboxForm">
+        <label><input type="checkbox" name="options" value="Internship"> Internship</label><br>
+        <label><input type="checkbox" name="options" value="Pabau"> Pabau</label><br>
+        <label><input type="checkbox" name="options" value="Employment"> Employment</label><br>
+        <label><input type="checkbox" name="options" value="Career"> Career</label><br>
+    
+        <button type="button" onclick="shuffleValues()">Shuffle Values</button>
+        <button type="button" onclick="showSelectedValues()">Show Selected Values</button>
+        <button type="button" onclick="changeValues()">Change Values</button>
+    </form>
+    <p id="selectedValues"></p>
+
+<style>
+    body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafc;
+    color: #4a4a4a;
+}
+
+form#checkboxForm {
+    max-width: 488px;
+    background-color: #f2dcdc;
+    padding: 40px;
+    margin: 60px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 24px;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    background: #b6b7bf;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+} 
+
+input[type="checkbox"]:checked {
+    background-color: #6c6a9b;
+    border-color: #616db9;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 10px;
+    height: 5px;
+    border: 2px solid #d48686;
+    border-top: none;
+    border-left: none;
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
+    background-color: #5e5e85;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: all 0.3s ease;
+    
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+button:hover {
+    background-color: #9f8da7;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+p#selectedValues {
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: #2e0060;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
+
+<script src="index.js"></script>
+</body>
+</html>
