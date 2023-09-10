@@ -1,0 +1,86 @@
+/* App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+header {
+  background-color: #e7e1e1; /* Background color */
+  color: #000000; /* Text color */
+  padding: 20px; /* Spacing inside the header */
+  text-align: center; /* Center-align text */
+}
+
+h3 {
+  font-size: 24px; /* Header text size */
+  margin: 0; /* Remove default margin */
+}
+
+p {
+  font-size: 16px; /* Paragraph text size */
+  margin: 10px 0; /* Add margin to separate the two lines */
+}
+
+.Body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.options-container {
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.option-item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.option-item:hover {
+  background-color: #f0f0f0;
+}
+
+.option-item img {
+  max-width: 20%;
+  height: auto;
+}
+
+.back-button {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-container {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.phone-number {
+  font-weight: bold;
+  color: #678ae2;
+}
+
+.footer {
+  background-color: #e7e1e1; /* Background color */
+  color: #000000; /* Text color */
+  text-align: center; /* Center-align text */
+  padding: 10px; /* Spacing inside the footer */
+}
+
+.logo {
+  max-width: 100px; /* Set a maximum width for the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 10px; /* Add some space above the logo */
+}
