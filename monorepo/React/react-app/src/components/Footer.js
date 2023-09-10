@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
-function Footer() {
-    return (
-        <footer className="footer">
-            <p> Powered by <img src={`${process.env.PUBLIC_URL}/logoPabau.png`} alt="Logo" className="logo" /></p>
-        </footer>
-    )
+class Footer extends Component {
+    render() {
+        return (
+            <footer className="footer">
+                <p> Powered by <img src={`${process.env.PUBLIC_URL}/logoPabau.png`} alt="Logo" className="logo" /></p>
+            </footer>
+        );
+    }
 }
 
 export default Footer;

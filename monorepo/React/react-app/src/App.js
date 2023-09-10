@@ -11,7 +11,7 @@ const steps = [
 ];
 
 function App() {
-  const [currentStep, setCurrentStep] = useState(0);
+  const [Step, setCurrentStep] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleSelect = (index) => {
@@ -26,9 +26,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header step={`${currentStep}/${steps.length}`} />
+      <Header step={`${Step}/${steps.length}`} />
       <Body
-        step={`${currentStep}/${steps.length}`}
+        step={`${Step}/${steps.length}`}
         options={steps}
         onSelect={handleSelect}
         selectedOption={selectedOption}

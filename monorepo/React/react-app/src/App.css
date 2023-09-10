@@ -65,6 +65,9 @@ p {
 .contact-container {
   margin-top: 20px;
   font-size: 14px;
+  border: 1px solid #ddd; /* Border around the container */
+  border-radius: 5px;
+  background-color: #e7e1e1;
 }
 
 .phone-number {
@@ -73,10 +76,11 @@ p {
 }
 
 .footer {
-  background-color: #e7e1e1; /* Background color */
-  color: #000000; /* Text color */
-  text-align: center; /* Center-align text */
-  padding: 10px; /* Spacing inside the footer */
+  background-color: #e7e1e1; 
+  color: #000000; 
+  text-align: center; 
+  padding: 10px; 
+  margin-top: 30px;
 }
 
 .logo {
