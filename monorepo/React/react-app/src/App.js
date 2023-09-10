@@ -21,7 +21,7 @@ function App() {
 
   const handleBack = () => {
     setSelectedOption(null);
-    setCurrentStep(0);
+    setCurrentStep(1);
   };
 
   return (
